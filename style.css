@@ -1,0 +1,309 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+
+
+.header-main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #8f8dcd;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+main {
+    margin-left: 250px;
+    flex: 1;
+    background-color: #6654a1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+
+header {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremi{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0;
+}
+
+
+section.projects {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 30%;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.avatar_img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+.texto-presentacion h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #000000;
+    font-weight: 600;
+}
+
+.subtitulo {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+
+.card-proyectos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.project-card {
+    background-color: #fbe3da;
+    height: 30vh;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-imagen {
+    flex: 0.5;
+    /* ocupa la mitad del espacio disponible */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 👈 alinea al inicio (izquierda) */
+    gap: 10px;
+    padding-left: 20px;
+    /* opcional: separa un poco del borde */
+
+}
+
+.descripcion-proyecto {
+    flex: 1.5;
+    /* ocupa la mitad del espacio disponible */
+    padding: 20px;
+    box-sizing: border-box;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.links-proyecto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.descripcion-proyecto ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* permite que bajen a otra línea */
+    gap: 10px;
+    /* espacio entre botones */
+    list-style: none;
+    /* sin puntos */
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.descripcion-proyecto li {
+    background-color: #e8e8e8;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: default;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.descripcion-proyecto li:hover {
+    background-color: #dcdcdc;
+    /* un poco más oscuro al pasar el mouse */
+}
+
+
+.imagen-proyectos {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+.habilidades {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #fbe3da;
+  text-align: center;
+}
+
+.habilidades h1 {
+  color: #2f285f;
+  margin-bottom: 30px;
+}
+
+.habilidades ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.habilidades li {
+  background-color: #cccce0;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  user-select: none;
+}
+
+footer {
+    margin-left: 250px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.educacion h1 {
+  font-size: 2rem;
+  color: #2f285f;
+  margin-bottom: 40px;
+}
+
+.educacion {
+  width: 100%;
+  padding: 60px 20px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.educacion h1 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+/* === LÍNEA PRINCIPAL HORIZONTAL === */
+.timeline {
+  position: relative;
+  width: 80%;
+  height: 4px;
+  background-color: #8f8dcd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+/* === CADA PUNTO (ETAPA) === */
+.timeline-item {
+  position: relative;
+  text-align: center;
+  flex: 1;
+}
+
+/* === CIRCULO CENTRAL === */
+.timeline-dot {
+  width: 22px;
+  height: 22px;
+  background-color: #8f8dcd;
+  border-radius: 50%;
+  border: 4px solid #fffaf8;
+  box-shadow: 0 0 0 3px #8f8dcd;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+/* === TARJETA DE TEXTO === */
+.timeline-content {
+  position: absolute;
+  top: 40px; /* debajo de la línea */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  background-color: #fbe3da;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+}
+
+.timeline-content h3 {
+  color: #584984;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.timeline-content h2 {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: #2f285f;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #333;
+  font-size: 0.9rem;
+}
